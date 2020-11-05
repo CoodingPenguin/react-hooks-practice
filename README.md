@@ -26,7 +26,7 @@
 
 ## 📝 공부 일지
 
-### # 1. USESTATE
+### 1장. USESTATE
 
 - 리액트 훅은 리액트 state 머신에 연결하는 기본적인 방법이다.
   - 코드를 더 간결하게 만들어준다.
@@ -37,3 +37,14 @@
   - `useState`는 매개변수로 state의 초기값을 설정할 수 있다.
 - `useState`가 반환하는 value의 Naming Convention은 `[ item, setItem]`과 같다.
 - 컴포넌트로 전달해야할 props가 한 객체에 있을 때 Destructuring `{...ObjectExample}`을 사용하자.
+- 기존 클래스형 컴포넌트와 똑같으므로 `useState`로 생성한 state의 값이 변경되면 화면이 다시 렌더링된다.
+
+### 2장. USEEFFECT
+
+- `useEffect`는 `componentDidMount`, `componentWillUpdate`, `componentWillUnmount`와 똑같다. 그래서 페이지가 새로고침되거나 state가 Update되서 다시 화면을 렌더링해야할 때 실행된다.
+- `useEffect`는 2개의 매개변수를 받고 1개의 함수를 반환한다. 이 때 반환하는 함수는 `componentWillUnmount`이다.
+  - **첫 번째 매개변수**는 effect로서의 함수이다.
+  - **두 번째 매개변수**는 첫 번째 매개변수로 받은 함수를 trigger시킬 수 있는 값들의 리스트이다. (= dependency)
+  - 즉, 두 번째 매개변수로 받은 리스트의 값들이 변경되면 첫 번째 매개변수의 함수가 실행된다.
+- 정리하면 `useEffect`는 `deps`로 받은 것들의 값이 변화했는지 감지하여 변경되었다면 인자로 받은 `func`를 실행시킨다.
+- 아무 것도 반응하게 만들고 싶지 않다면 `[]` 빈 배열을 넘겨주면 된다.
