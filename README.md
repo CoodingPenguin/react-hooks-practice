@@ -18,7 +18,7 @@
 - [x] `useNetwork` : 온라인인지 오프라인인지 감지
 - [x] `useScroll` : 사용자가 스크롤을 사용할 때를 감지
 - [x] `useFullscreen` : element를 풀스크린 혹은 일반화면으로 바꿈
-- [ ] `useAxios` : HTTP requests client axios를 위한 wrapper
+- [x] `useAxios` : HTTP requests client axios를 위한 wrapper
 - [ ] `useHover` : element 위에 마우스를 올렸는지 감지
 
 ### Others
