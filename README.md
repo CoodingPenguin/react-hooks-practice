@@ -13,14 +13,14 @@
 
 - [x] `useTitle` : Helmet 대신 Document의 제목을 변경
 - [x] `useClick` : element를 클릭하는 시점을 감지
-- [ ] `useBeforeLeave` : 사용자가 페이지를 벗어나는 시점을 감지
-- [ ] `useFadeIn` : element가 안으로 서서히 사라지게 함
+- [x] `useBeforeLeave` : 사용자가 페이지를 벗어나는 시점을 감지
+- [x] `useFadeIn` : element가 안으로 서서히 사라지게 함
 - [ ] `useFullscreen` : element를 풀스크린 혹은 일반화면으로 바꿈
-- [ ] `useHover` : element 위에 마우스를 올렸는지 감지
 - [ ] `useNetwork` : 온라인인지 오프라인인지 감지
 - [ ] `useNotification` : Notification API를 사용해 사용자에게 알림을 보냄
 - [ ] `useScroll` : 사용자가 스크롤을 사용할 때를 감지
 - [ ] `useAxios` : HTTP requests client axios를 위한 wrapper
+- [ ] `useHover` : element 위에 마우스를 올렸는지 감지
 
 ### Others
 - [x] `useConfirm` : 사용자가 하려는 동작의 확인 여부를 띄움
