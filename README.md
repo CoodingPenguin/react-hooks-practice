@@ -15,8 +15,8 @@
 - [x] `useClick` : element를 클릭하는 시점을 감지
 - [x] `useBeforeLeave` : 사용자가 페이지를 벗어나는 시점을 감지
 - [x] `useFadeIn` : element가 안으로 서서히 사라지게 함
+- [x] `useNetwork` : 온라인인지 오프라인인지 감지
 - [ ] `useFullscreen` : element를 풀스크린 혹은 일반화면으로 바꿈
-- [ ] `useNetwork` : 온라인인지 오프라인인지 감지
 - [ ] `useNotification` : Notification API를 사용해 사용자에게 알림을 보냄
 - [ ] `useScroll` : 사용자가 스크롤을 사용할 때를 감지
 - [ ] `useAxios` : HTTP requests client axios를 위한 wrapper
