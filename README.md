@@ -13,7 +13,7 @@
 
 - [x] `useTitle` : Helmet 대신 Document의 제목을 변경
 - [x] `useClick` : element를 클릭하는 시점을 감지
-- [ ] `usePageLeave` : 사용자가 페이지를 벗어나는 시점을 감지
+- [ ] `useBeforeLeave` : 사용자가 페이지를 벗어나는 시점을 감지
 - [ ] `useFadeIn` : element가 안으로 서서히 사라지게 함
 - [ ] `useFullscreen` : element를 풀스크린 혹은 일반화면으로 바꿈
 - [ ] `useHover` : element 위에 마우스를 올렸는지 감지
@@ -47,9 +47,10 @@
 - `useEffect`는 2개의 매개변수를 받고 1개의 함수를 반환한다. 이 때 반환하는 함수는 `componentWillUnmount`이다.
   - **첫 번째 매개변수**는 effect로서의 함수이다.
   - **두 번째 매개변수**는 첫 번째 매개변수로 받은 함수를 trigger시킬 수 있는 값들의 리스트이다. (= dependency)
-  - 아무 것도 반응하게 만들고 싶지 않다면 `[]` 빈 배열을 넘겨주면 된다.
+  - 아무 것도 반응하게 만들고 싶지 않다면 `[]` 빈 배열을 넘겨주면 된다. 그럼 딱 한 번만 effect 함수가 실행되고 더이상 실행되지 않는다.
 - 즉, 두 번째 매개변수로 받은 리스트의 값들이 변경되면 첫 번째 매개변수의 함수가 실행된다. `useEffect`는 `deps`로 받은 것들의 값이 변화했는지 감지하여 변경되었다면 인자로 받은 `func`를 실행시킨다.
 - 첫 매개변수로 넣어준 함수는 `useEffect`가 componentDidMount되었을 때 호출되고, componentWillUnMount될 때 첫 번째 매개변수의 함수가 반환하는 함수를 실행시켜준다.
+- eventListener를 사용하는 경우 return에 eventListener를 제거하는 함수를 넣어준다.
 
 
 ### useRef
