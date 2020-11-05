@@ -18,13 +18,13 @@
 - [x] `useNetwork` : 온라인인지 오프라인인지 감지
 - [x] `useScroll` : 사용자가 스크롤을 사용할 때를 감지
 - [x] `useFullscreen` : element를 풀스크린 혹은 일반화면으로 바꿈
-- [ ] `useNotification` : Notification API를 사용해 사용자에게 알림을 보냄
 - [ ] `useAxios` : HTTP requests client axios를 위한 wrapper
 - [ ] `useHover` : element 위에 마우스를 올렸는지 감지
 
 ### Others
 - [x] `useConfirm` : 사용자가 하려는 동작의 확인 여부를 띄움
 - [x] `usePreventLeave` : 사용자가 변경사항을 저장하지 않고 페이지를 벗어나려 할 때 확인 여부를 띄움
+- [x] `useNotification` : Notification API를 사용해 사용자에게 알림을 보냄
 
 ## 📝 공부 일지
 
