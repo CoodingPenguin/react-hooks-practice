@@ -11,7 +11,7 @@
 
 ### useEffect
 
-- [ ] `useTitle` : 리액트 Document의 제목을 변경
+- [x] `useTitle` : Helmet 대신 Document의 제목을 변경
 - [ ] `usePageLeave` : 사용자가 페이지를 벗어나는 시점을 감지
 - [ ] `useClick` : element를 클릭하는 시점을 감지
 - [ ] `useFadeIn` : element가 안으로 서서히 사라지게 함
@@ -48,3 +48,5 @@
   - 즉, 두 번째 매개변수로 받은 리스트의 값들이 변경되면 첫 번째 매개변수의 함수가 실행된다.
 - 정리하면 `useEffect`는 `deps`로 받은 것들의 값이 변화했는지 감지하여 변경되었다면 인자로 받은 `func`를 실행시킨다.
 - 아무 것도 반응하게 만들고 싶지 않다면 `[]` 빈 배열을 넘겨주면 된다.
+- `useState`로 state를 생성하고 값을 변경하는데, 여기서 변경이 될 때마다 어떤 함수를 호출시킬 때마다 사용하는 것이다. 원래라면 `componentWillUpdate` 안에 정의해주었다.
+  - 그런데 [React 문서](https://ko.reactjs.org/docs/react-component.html#unsafe_componentwillupdate)에 따르면 `componentWillUpdate`는 안전하지 않아서 `componentDidUpdate`를 권장하고 있다.
