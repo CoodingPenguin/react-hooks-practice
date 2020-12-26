@@ -1,32 +1,33 @@
-# 실전형 리액트 Hooks 연습하기
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/coodingpenguin/react-hooks-practice">
+    <img src="logo.png" alt="Logo" width="128" height="128">
+  </a>
+  <h3>React Hooks Practice</h3>
+  <small>직접 만들며 배우는 React Hook</small>
+</div>
 
-[실전형 리액트 Hooks 10개 강의](https://nomadcoders.co/react-hooks-introduction)를 듣고 리액트 훅 사용법을 익힙니다.
+## 📝 목차
 
-## ✅ TODO
+- `useInput` : 사용자 입력 받기
+- `useTabs` : Button Tab의 순서에 따라 보이는 Item을 변경
+- `useTitle` : Helmet 대신 Document의 제목을 변경
+- `useClick` : element를 클릭하는 시점을 감지
+- `useBeforeLeave` : 사용자가 페이지를 벗어나는 시점을 감지
+- `useFadeIn` : element가 안으로 서서히 사라지게 함
+- `useNetwork` : 온라인인지 오프라인인지 감지
+- `useScroll` : 사용자가 스크롤을 사용할 때를 감지
+- `useFullscreen` : element를 풀스크린 혹은 일반화면으로 바꿈
+- `useAxios` : HTTP requests client axios를 위한 wrapper
+- `useConfirm` : 사용자가 하려는 동작의 확인 여부를 띄움
+- `usePreventLeave` : 사용자가 변경사항을 저장하지 않고 페이지를 벗어나려 할 때 확인 여부를 띄움
+- `useNotification` : Notification API를 사용해 사용자에게 알림을 보냄
 
-### useState
+## ✅ 공부 일지
 
-- [x] `useInput` : Input과 동일
-- [x] `useTabs` : Button Tab의 순서에 따라 보이는 Item을 변경
-
-### useEffect
-
-- [x] `useTitle` : Helmet 대신 Document의 제목을 변경
-- [x] `useClick` : element를 클릭하는 시점을 감지
-- [x] `useBeforeLeave` : 사용자가 페이지를 벗어나는 시점을 감지
-- [x] `useFadeIn` : element가 안으로 서서히 사라지게 함
-- [x] `useNetwork` : 온라인인지 오프라인인지 감지
-- [x] `useScroll` : 사용자가 스크롤을 사용할 때를 감지
-- [x] `useFullscreen` : element를 풀스크린 혹은 일반화면으로 바꿈
-- [x] `useAxios` : HTTP requests client axios를 위한 wrapper
-- [ ] `useHover` : element 위에 마우스를 올렸는지 감지
-
-### Others
-- [x] `useConfirm` : 사용자가 하려는 동작의 확인 여부를 띄움
-- [x] `usePreventLeave` : 사용자가 변경사항을 저장하지 않고 페이지를 벗어나려 할 때 확인 여부를 띄움
-- [x] `useNotification` : Notification API를 사용해 사용자에게 알림을 보냄
-
-## 📝 공부 일지
+<details markdown="1">
+<summary><strong><a href="https://nomadcoders.co/react-hooks-introduction">노마드코더 실전형 리액트 Hooks 10개 강의</a> 내용 정리</strong></summary>
 
 ### useState
 
@@ -52,8 +53,10 @@
 - 첫 매개변수로 넣어준 함수는 `useEffect`가 componentDidMount되었을 때 호출되고, componentWillUnMount될 때 첫 번째 매개변수의 함수가 반환하는 함수를 실행시켜준다.
 - eventListener를 사용하는 경우 return에 eventListener를 제거하는 함수를 넣어준다.
 
-
 ### useRef
+
 - `useRef`는 `document.getElementById()`와 같이 컴포넌트의 어떤 부분을 선택할 수 있는 함수이다.
 - 리액트의 모든 컴포넌트는 reference prop을 가지고 있어 이 prop을 가지고 컴포넌트를 참조를 할 수 있다. 즉, 참조하여 컴포넌트를 변경할 수 있다.
 - `useRef`를 사용하여 컴포넌트 혹은 HTML element를 참조하여 `useEffect`가 실행되는 경우마다 참조한 컴포넌트 혹은 element를 변경시키는 식으로 사용할 수 있다.
+
+</details>
