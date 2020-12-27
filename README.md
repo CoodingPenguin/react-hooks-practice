@@ -24,7 +24,7 @@
 - `usePreventLeave` : 사용자가 변경사항을 저장하지 않고 페이지를 벗어나려 할 때 확인 여부를 띄움
 - `useNotification` : Notification API를 사용해 사용자에게 알림을 보냄
 
-## ✅ 공부 일지
+## ✅ 공부일지
 
 <details markdown="1">
 <summary><strong><a href="https://nomadcoders.co/react-hooks-introduction">노마드코더 실전형 리액트 Hooks 10개 강의</a> 내용 정리</strong></summary>
